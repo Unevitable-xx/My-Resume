@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <article class="titlebar">
-
+    <header>
         <section class="header-title-line">
-            
-            <h1>
-                <img src="./images/depositphotos_32898811-stock-illustration-vector-alphabet-neon-letter-t.jpg" alt="logo" height="50px" width="50px">ANISH MITTAL
-            </h1>
+            <a href="#">
+                <h1><img src="./images/depositphotos_32898811-stock-illustration-vector-alphabet-neon-letter-t.jpg"
+                        alt="T names logo" height="50px" width="50px">ANISH MITTAL</h1>
+            </a>
             <button class="menu-button">
                 <div class="menu-icon"></div>
             </button>
@@ -22,74 +22,105 @@
 
         <nav>
             <ul>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="./hobbies.html">Hobbies</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-
-    </article>
-
-    <header class="header">
-
-        <figure>
-            <img src="./images/nainital.jpeg" alt="Profile Pic" height="200" width="200">
-        </figure>
-
-        <h1>Hello I'am <span class="nowrap">TANISH MITTAL</span></h1>
-
-        <section>
-            <p>A Cyber Lunatic !</p>
-            <p>Always Seeking to Learn Something New and Fruitful.</p>
-        </section>
-
     </header>
 
-    <h2>Education:</h2>
-    <p>
-    <ul>
-        <li>
-            <h4>Motilal Nehru National Institute of Technology</h4>
+    <main>
+
+        <article class="front">
+            <figure class="front-fig">
+                <img src="./images/nainital.jpeg" alt="Profile Pic" height="200" width="200">
+            </figure>
+
+            <h2 class="front-h2">
+                <span class="animateDown">
+                Hello 👋 I'am 
+                </span>
+                <span class="nowrap" class="nameContainer">
+                    <span class="animateRoll">T</span>
+                    <span class="animateRoll">A</span>
+                    <span class="animateRoll">N</span>
+                    <span class="animateRoll">I</span>
+                    <span class="animateRoll">S</span>
+                    <span class="animateRoll">H</span>
+                    <span class="animateRoll">&nbsp;</span>
+                    <span class="animateRoll">M</span>
+                    <span class="animateRoll">I</span>
+                    <span class="animateRoll">T</span>
+                    <span class="animateRoll">T</span>
+                    <span class="animateRoll">A</span>
+                    <span class="animateRoll">L</span>
+                </span>
+            </h2>
+
+            <section class="front-p">
+                <p>A Cyber Lunatic !</p>
+                <p>Always Seeking to Learn Something New and Fruitful.</p>
+            </section>
+
+        </article>
+
+        <article>
+            <section id="Education">
+                <h2>Education:</h2>
+                <p>
+                <ul>
+                    <li>
+                        <h4>Motilal Nehru National Institute of Technology</h4>
+                        <p>
+                            B.Tech. Computer Science & Engineering <br><br>
+                            Year: 2024 (current) <br>
+                            Cpi: 8.05
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Sudesh Vatika Convent School, Bhagiwander</h4>
+                        <p>
+                            Central Board of Secondary Education, Class 12 <br><br>
+                            Year: 2023 <br>
+                            Percentage: 95.8
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Silver Oaks School, Bathinda</h4>
+                        <p>
+                            Central Board of Secondary Education, Class 10 <br><br>
+                            Year: 2021 <br>
+                            CGPA: 10
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h2>Work Experience:</h2>
+                <p>Currently Unemployed</p>
+            </section>
+            <hr>
+            <section id="skills"></section>
+            <h2>Technical Skills & Interests:</h2>
             <p>
-                B.Tech. Computer Science & Engineering <br><br>
-                Year: 2024 (current) <br>
-                Cpi: 8.05
+                Languages: C, C++, Python, Html <br>
+                IDE's : VS Code, Replit, Jupyter Notebook <br>
+                Frameworks : Machine Learning
             </p>
-        </li>
-        <li>
-            <h4>Sudesh Vatika Convent School, Bhagiwander</h4>
-            <p>
-                Central Board of Secondary Education, Class 12 <br><br>
-                Year: 2023 <br>
-                Percentage: 95.8
-            </p>
-        </li>
-        <li>
-            <h4>Silver Oaks School, Bathinda</h4>
-            <p>
-                Central Board of Secondary Education, Class 10 <br><br>
-                Year: 2021 <br>
-                CGPA: 10
-            </p>
-        </li>
-    </ul>
-    </p>
-    <hr>
-    <h2>Work Experience:</h2>
-    <p>Currently Unemployed</p>
-    <hr>
-    <h2>Technical Skills & Interests:</h2>
-    <p>
-        Languages: C, C++, Python, Html <br>
-        IDE's : VS Code, Replit, Jupyter Notebook <br>
-        Frameworks : Machine Learning
-    </p>
-    <hr>
-    <h2>Certification:</h2>
-    <p>
-        Specialization in Machine Learning by DeepLearningAI (Stanford University Course)
-    </p>
+            </section>
+            <hr>
+            <section>
+                <h2>Certification:</h2>
+                <p>
+                    Specialization in Machine Learning by DeepLearningAI (Stanford University Course)
+                </p>
+            </section>
+        </article>
+
+    </main>
     <hr>
     <footer>
         <p><a href="./hobbies.html">Hobbies</a> <a href="./contact.html">Contact Me</a></p>
