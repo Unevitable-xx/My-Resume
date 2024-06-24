@@ -33,6 +33,7 @@ header{
     color: whitesmoke;
     position:sticky;
     top:0;
+    z-index: 1;
 }
 
 .header-title-line{
@@ -216,7 +217,7 @@ nav a:hover,nav a:focus{
     animation-name: downwardSwipes;
     animation-duration: 3s;
     animation-timing-function: ease;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -250,7 +251,7 @@ nav a:hover,nav a:focus{
     opacity: 0%;
     transform: rotate(0deg) translateX(100vw);
     animation-name: leftRoll;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     transform-origin: right center;
@@ -261,7 +262,7 @@ nav a:hover,nav a:focus{
         opacity:0;
         transform: rotate(0deg) translateX(100vw);
     }
-    70%{
+    65%{
         opacity:0;
         transform: rotate(0deg) translateX(100vw);
     }
@@ -313,5 +314,134 @@ nav a:hover,nav a:focus{
 
 /* /////// */
 
-/* End of Front Page */
+/* /// End of Front Page /// */
 
+/* /// Start of Education Section /// */
+
+.education{
+    background-image:radial-gradient(whitesmoke,hsla(286, 100%, 50%, 0.471));
+    /* background-color: #e4c1f9; */
+    background-color: hsla(0, 0%,0%, 0.4);
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.education-h2{
+    margin-top: 1rem;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.5rem
+}
+
+.education-ul{
+    display:flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+
+    background-color: papayawhip;
+    padding: 2rem;
+    list-style-type: none;
+    border: 5px solid #17202d;
+    border-bottom: 5px dashed #17202d;
+}
+
+.education-li{
+    border:5px solid hsl(270, 46%, 30%);
+    padding: 1rem;
+    background-color: papayawhip;
+
+    display:flex;
+    flex-flow: column nowrap;
+    row-gap: 0.25rem;
+}
+
+.education-h4{
+    font-size: 1.2rem;
+    font-weight:900;
+}
+
+.education-course{
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    font-weight:100;
+}
+
+.education-year{
+    font-weight: 400;
+}
+
+.education-current{
+    color: red;
+}
+
+/* popOut animation */
+
+.popOutanimate:first-child{
+    opacity: 0;
+
+    animation-name: popOut1;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popOut1{
+    0%{
+        opacity:0;
+        transform: translateX(-400px)
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+.popOutanimate:nth-child(2){
+    opacity: 0;
+
+    animation-name: popOut2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay:0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popOut2{
+    0%{
+        opacity:0;
+        transform: translateX(400px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0)
+    }
+}
+.popOutanimate:nth-child(3){
+    opacity: 0;
+
+    animation-name: popOut3;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay:0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popOut3{
+    0%{
+        opacity:0;
+        transform: translateX(-400px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
